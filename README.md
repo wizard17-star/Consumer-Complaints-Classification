@@ -17,10 +17,10 @@ Real CFPB Consumer Complaints dataset using text-based machine learning with adv
 ```
 Consumer-Complaints-Classification/
 ├── notebooks/
-│   └── complete_analysis.ipynb           # Full ML pipeline (22 cells)
+│   └── complete_analysis.ipynb           
 │
 ├── presentations/
-│   └── presentation.ipynb                # Interactive presentation notebook
+│   └── presentation.ipynb                
 │
 ├── results/
 │   ├── 01_class_distribution.png
@@ -34,9 +34,9 @@ Consumer-Complaints-Classification/
 │   └── baseline_metrics.csv
 │
 ├── data/                                 # (Download from Kaggle - see below)
-├── README.md                             # This file
+├── README.md                             
 ├── requirements.txt                      # Python dependencies
-└── .gitignore                            # Git ignore file
+└── .gitignore                            
 ```
 
 ---
@@ -161,17 +161,3 @@ jupyter notebook complete_analysis.ipynb
 - Voting Classifier: +2.14%
 - **SMOTE: +2.49%** ✅ Best
 
----
-
-## 🎯 Status
-
-✅ **Complete** - Full analysis and model optimization done
-✅ **Evaluated** - All models tested with proper validation
-✅ **Documented** - Results visible in notebook outputs
-
----
-
-**Author**: Serhat Aslan (s34090)
-**Date**: January 15, 2026
-**Repository**: https://github.com/wizard17-star/Consumer-Complaints-Classification
-**Final F1-Score**: 0.7465
