@@ -21,7 +21,7 @@ pip install -r requirements.txt
 ### 2. Run Jupyter Notebook
 ```bash
 jupyter notebook
-# Open: notebooks/COMPLETE_ANALYSIS.ipynb
+# Open: notebooks/complete_analysis.ipynb
 # Run all cells (Shift+Enter)
 ```
 
@@ -35,11 +35,11 @@ jupyter notebook
 ## View Results
 
 ### Presentations (Choose Format)
-- 📊 **PRESENTATION.html** - Open in browser
--  **PRESENTATION.md** - Edit in VS Code
+- 📊 **presentation.html** - Open in browser
+- 📝 **presentation.md** - Edit in VS Code
 
 ### Documentation
-- 📋 **FINAL_RESULTS.md** - Complete analysis & metrics
+- 📋 **final_results.md** - Complete analysis & metrics
 - 📖 **README.md** - Project overview
 - 📍 **This file** - Quick reference
 
@@ -68,9 +68,9 @@ jupyter notebook
 ## Key Files
 
 ```
-COMPLETE_ANALYSIS.ipynb      # Run this for full analysis
-COMPLETE_PRESENTATION.*       # View results here
-FINAL_RESULTS.md             # Read detailed analysis
+complete_analysis.ipynb      # Run this for full analysis
+presentation.*               # View results here
+final_results.md             # Read detailed analysis
 ```
 
 ---

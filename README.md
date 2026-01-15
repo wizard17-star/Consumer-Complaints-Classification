@@ -17,13 +17,7 @@ Real CFPB Consumer Complaints dataset using text-based machine learning with adv
 ```
 Wum Project/
 ├── notebooks/
-│   └── COMPLETE_ANALYSIS.ipynb           # Full pipeline (22 cells)
-│
-├── presentations/
-│   ├── COMPLETE_PRESENTATION.md          # Optimized presentation (14 slides)
-│   ├── COMPLETE_PRESENTATION.html        # Web-viewable
-│   ├── COMPLETE_PRESENTATION.pdf         # PDF download
-│   └── Presentation_Part_*.* (original)
+│   └── complete_analysis.ipynb           # Full pipeline (22 cells)
 │
 ├── results/
 │   ├── 04_model_comparison_4models.png    # 4-model comparison
@@ -31,10 +25,13 @@ Wum Project/
 │   ├── confusion_matrix.png               # Test set matrix
 │   └── 05_optimization_comparison.png     # Optimization results
 │
-├── FINAL_RESULTS.md                      # Complete analysis
-├── QUICKSTART.md                         # Setup & run guide
+├── presentation.md                       # Markdown presentation
+├── presentation.html                     # Web-viewable presentation
+├── final_results.md                      # Complete analysis
+├── quickstart.md                         # Setup & run guide
 ├── README.md                             # This file
-└── requirements.txt                      # Dependencies
+├── requirements.txt                      # Dependencies
+└── .gitignore                            # Git ignore file
 ```
 
 ---
@@ -83,14 +80,14 @@ pip install -r requirements.txt
 ### 3. Run Full Analysis
 ```bash
 cd notebooks
-jupyter notebook COMPLETE_ANALYSIS.ipynb
+jupyter notebook complete_analysis.ipynb
 # Run all cells - takes ~5 minutes
 ```
 
 ### 4. View Results
-- **Presentation**: Open `presentations/COMPLETE_PRESENTATION.html`
-- **Detailed Results**: Read `FINAL_RESULTS.md`
-- **Quick Reference**: See `QUICKSTART.md`
+- **Presentation**: Open `presentation.html`
+- **Detailed Results**: Read `final_results.md`
+- **Quick Reference**: See `quickstart.md`
 
 ---
 
