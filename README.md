@@ -15,22 +15,27 @@ Real CFPB Consumer Complaints dataset using text-based machine learning with adv
 ## 📁 Project Structure
 
 ```
-Wum Project/
+Consumer-Complaints-Classification/
 ├── notebooks/
-│   └── complete_analysis.ipynb           # Full pipeline (22 cells)
+│   └── complete_analysis.ipynb           # Full ML pipeline (22 cells)
+│
+├── presentations/
+│   └── presentation.ipynb                # Interactive presentation notebook
 │
 ├── results/
-│   ├── 04_model_comparison_4models.png    # 4-model comparison
-│   ├── learning_curves.png                # Training dynamics
-│   ├── confusion_matrix.png               # Test set matrix
-│   └── 05_optimization_comparison.png     # Optimization results
+│   ├── 01_class_distribution.png
+│   ├── 02_baseline_confusion_matrix.png
+│   ├── 03_baseline_metrics_visualization.png
+│   ├── 04_model_comparison_4models.png
+│   ├── 05_optimization_comparison.png
+│   ├── confusion_matrix.png
+│   ├── learning_curves.png
+│   ├── final_comparison.png
+│   └── baseline_metrics.csv
 │
-├── presentation.md                       # Markdown presentation
-├── presentation.html                     # Web-viewable presentation
-├── final_results.md                      # Complete analysis
-├── quickstart.md                         # Setup & run guide
+├── data/                                 # (Download from Kaggle - see below)
 ├── README.md                             # This file
-├── requirements.txt                      # Dependencies
+├── requirements.txt                      # Python dependencies
 └── .gitignore                            # Git ignore file
 ```
 
@@ -70,7 +75,9 @@ The dataset file (`data/Consumer_Complaints.csv`, ~515 MB) is **not included** i
 ## 🚀 Quick Start
 
 ### 1. Download Dataset
-- Follow the instructions above to get `Consumer_Complaints.csv`
+- Go to: [Kaggle - Consumer Complaints Dataset](https://www.kaggle.com/datasets/dushyantv/consumer_complaints?resource=download)
+- Download `Consumer_Complaints.csv`
+- Place it in `data/` folder
 
 ### 2. Install Dependencies
 ```bash
@@ -81,13 +88,13 @@ pip install -r requirements.txt
 ```bash
 cd notebooks
 jupyter notebook complete_analysis.ipynb
-# Run all cells - takes ~5 minutes
+# Run all cells - ~5 minutes
 ```
 
 ### 4. View Results
-- **Presentation**: Open `presentation.html`
-- **Detailed Results**: Read `final_results.md`
-- **Quick Reference**: See `quickstart.md`
+- **Detailed Analysis**: See output in `complete_analysis.ipynb`
+- **Interactive Presentation**: Open `presentations/presentation.ipynb`
+- **Visualizations**: Check `results/` folder
 
 ---
 
@@ -130,29 +137,41 @@ jupyter notebook complete_analysis.ipynb
 
 **Challenges**:
 - ⚠️ Semantic similarity in categories
-- ⚠️ Text overlap across classes
-- ⚠️ Minority classes harder to predict
-- ⚠️ TF-IDF loses word context
-
 ---
 
-## 📖 Documentation Files
+## 📊 Results Summary
 
-- **FINAL_RESULTS.md** - Complete analysis, detailed metrics, all findings
-- **QUICKSTART.md** - Setup instructions, how to run, key files
-- **README.md** - This file, project overview
+### Best Model Performance
+- **Algorithm**: Logistic Regression + SMOTE
+- **F1-Score**: 0.7465 (74.65%)
+- **Precision**: 0.7393
+- **Recall**: 0.7561
+- **Improvement**: +2.49% over baseline
+
+### All Models Tested
+| Model | F1-Score |
+|-------|----------|
+| Linear SVM | 0.7500 |
+| Logistic Regression | 0.7416 |
+| Random Forest | 0.7186 |
+| Naive Bayes | 0.6060 |
+
+### Optimization Techniques
+- GridSearchCV: +0.80%
+- Voting Classifier: +2.14%
+- **SMOTE: +2.49%** ✅ Best
 
 ---
 
 ## 🎯 Status
 
-✅ **COMPLETE** - All analysis done, models optimized, presentations ready  
-✅ **COMPLETE** - Full analysis and evaluation done  
-✅ **DOCUMENTED** - Full results and insights included
+✅ **Complete** - Full analysis and model optimization done
+✅ **Evaluated** - All models tested with proper validation
+✅ **Documented** - Results visible in notebook outputs
 
 ---
 
-**Author**: Serhat Aslan (s34090)  
-**Date**: January 15, 2026  
-**Best Model**: Logistic Regression + SMOTE  
+**Author**: Serhat Aslan (s34090)
+**Date**: January 15, 2026
+**Repository**: https://github.com/wizard17-star/Consumer-Complaints-Classification
 **Final F1-Score**: 0.7465
