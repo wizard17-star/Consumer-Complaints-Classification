@@ -36,8 +36,7 @@ jupyter notebook
 
 ### Presentations (Choose Format)
 - 📊 **PRESENTATION.html** - Open in browser
-- 📕 **PRESENTATION.pdf** - Download & view
-- 📝 **PRESENTATION.md** - Edit in VS Code
+-  **PRESENTATION.md** - Edit in VS Code
 
 ### Documentation
 - 📋 **FINAL_RESULTS.md** - Complete analysis & metrics
